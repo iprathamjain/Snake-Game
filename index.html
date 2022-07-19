@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" type="text/css" href="style.css"> <title>Snake Game</title></head>
+    <body>
+        <div style="text-align: center;">
+    		<h1 style="color: #202020;"> SNAKE GAME </h1>
+    	</div>
+        <div style="text-align: center;">
+            <canvas id="canvas" width="600" height="600"></canvas>
+        </div>
+        <style>
+            button {
+                padding: 10px;
+                margin: 10px;
+                width: 200px;
+                height: 200px;
+                font-size: xx-large;
+            }
+        </style>
+        <script src="snake.js"></script>
+        <div style="text-align: center; margin: 50px;">
+            <button onclick="eventHandler('up')" id="up" style="transform: rotate(-90deg);">&gt;</button><br/>
+            <button onclick="eventHandler('left')" id="left">&lt;</button>
+            <button onclick="eventHandler('down')"  id="down" style="transform: rotate(90deg);">&gt;</button>
+            <button onclick="eventHandler('right')" id="right">&gt;</button>
+        </div>
+        <div style="text-align: center; position: absolute;top: 50%;right: 5%;" >
+        	<h1>SCORE: </h1><span id="score"></span>
+          <p id="over">Playing</p>
+        </div>
+    </body>
+</html>
